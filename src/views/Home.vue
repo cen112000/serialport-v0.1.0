@@ -203,7 +203,7 @@ import {
 
 import { searchSerialPort as findSP, RTDevice } from "../common/RTDevice";
 import { parseData,delay } from "../static/RTLocal";
-//VXE表格。
+//VXE表格。1111
 import { VxeTableInstance, VxeTablePropTypes } from 'vxe-table'
 import XEUtils from "xe-utils";
 export default defineComponent({
