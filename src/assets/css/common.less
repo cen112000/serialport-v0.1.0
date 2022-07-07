@@ -1,0 +1,579 @@
+.rt-text {
+  font-size: 0.15rem;
+}
+
+.rt-text-box {
+  display: inline-block;
+  width: 1rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  // font-weight: bold;
+}
+
+.rt-text-box-md {
+  width: 0.8rem;
+}
+
+.rt-text-box-lg {
+  width: auto
+}
+
+.rt-text-sim-big {
+  font-size: 0.25rem !important;
+}
+
+.rt-text-box-fix {
+  width: 0.3rem;
+  position: relative;
+}
+
+.rt-text-sim-fix {
+  width: 0.8rem;
+  font-size: 0.25rem;
+}
+
+.rt-text-bottom-line {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+//发光背景
+.rt-box-flash {
+  border: none;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// .rt-bg-box {
+//   width: 5rem;
+//   height: 4rem;
+//   background: url('../images/box4.png') center center no-repeat;
+//   background-size: cover;
+//   position: relative;
+//   overflow: hidden;
+//   // border-top: 2px solid orange ;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+// }
+
+//按钮
+.rt-btn {
+  width: 1.5rem;
+  height: 0.4rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.18rem;
+}
+
+.rt-margin-left-sm {
+  margin-left: 3.395rem !important;
+}
+
+.rt-margin-left {
+  margin-left: 5.652rem !important;
+}
+
+.rt-trans {
+  // background-color: #ccc !important;
+  // border-right: 0;
+  // position: relative;
+  // border-left:  1px solid #fff;
+  // border-bottom:  1px solid #fff;
+}
+
+//原生按钮 样式。
+.local-btn {
+  cursor: pointer;
+}
+
+.local-btn:hover {
+  opacity: 0.8;
+}
+
+.btn-enter {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url('../images/back.png') center center no-repeat;
+  background-size: contain;
+  transform: rotateY(180deg);
+  position: fixed;
+  right: 2%;
+  bottom: 0;
+}
+
+.btn-enter:hover {
+  opacity: 0.8;
+}
+
+.btn-enter-back {
+  transform: rotateY(0deg);
+}
+
+//
+.rt-custom-btn {
+  width: 1.5rem;
+  height: 0.4rem;
+  color: #fff;
+  border-radius: 2px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.2rem;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-user-drag: none;
+
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.rt-custom-btn-none {
+  opacity: 0;
+  cursor: default;
+}
+
+.rt-btn-sm {
+  width: 1rem;
+}
+
+.rt-btn-md {
+  width: 2rem;
+}
+
+/* 6 */
+.rt-btn-6 {
+  background: rgb(247, 150, 192);
+  background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.rt-btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rt-btn-6:before,
+.rt-btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+  box-shadow:
+    -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, .4),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.rt-btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+
+.rt-btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+
+.rt-btn-6:hover {
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+
+.rt-btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.rt-btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.rt-btn-6 span:before,
+.rt-btn-6 span:after {
+  position: absolute;
+  content: "";
+  box-shadow:
+    -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, .4),
+    4px 4px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.rt-btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+
+.rt-btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+
+.rt-btn-6 span:hover:before {
+  width: 100%;
+}
+
+.rt-btn-6 span:hover:after {
+  width: 100%;
+}
+
+/* 2 */
+.rt-btn-2 {
+  background: rgb(96, 9, 240);
+  background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+}
+
+/* 3 */
+.rt-btn-3 {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+/* 5 */
+.rt-btn-5 {
+  background: rgb(255, 27, 0);
+  background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+/* 6 */
+.rt-btn-6 {
+  background: rgb(247, 150, 192);
+  background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+}
+
+/* 7 */
+.rt-btn-7 {
+  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+/* 11 */
+.rt-btn-11 {
+  background: rgb(251, 33, 117);
+  background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+}
+
+/* 12 */
+.rt-btn-12 {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+/* 14 */
+.rt-btn-14 {
+  background: rgb(255, 151, 0);
+}
+
+/* 17 */
+.rt-btn-17 {
+  background: linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+}
+
+/* 16 */
+.rt-btn-16 {
+  border: none;
+  color: #fff;
+}
+
+.rt-btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+.rt-btn-16:hover {
+  // color: #fff;
+  opacity: 0.8;
+}
+
+.rt-btn-16:hover:after {
+  // left: auto;
+  // right: 0;
+  // width: 100%;
+}
+
+.rt-btn-16:active {
+  top: 2px;
+}
+
+//text area 
+.rt-textarea {
+  width: 90% !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid orange !important;
+  outline: none !important;
+  color: #EEE !important;
+
+  &::placeholder {
+    text-align: center;
+  }
+}
+
+//提示框样式。
+.rt-tip {
+  border-bottom: 1px solid orange;
+}
+
+.rt-combox {
+  display: inline-block;
+  width: 1rem;
+  height: 0.4rem !important;
+  margin: 0;
+  
+  background-color: transparent;
+  color: #ccc !important;
+  font-size: 0.18rem;
+
+}
+
+.rt-combox-sm {
+  width: 1.3rem !important;
+}
+.rt-combox-smx {
+  width: 1.5rem !important;
+}
+
+.rt-combox-lm {
+  width: 2rem !important;
+}
+
+.rt-combox-md {
+  width: 2.064rem !important;
+}
+
+.rt-combox-sg {
+  width: 2.057rem !important;
+}
+
+.rt-combox-lg {
+  width: 3.11rem !important;
+}
+
+.pos-fix {
+  margin-left: 5px !important;
+}
+
+/** a标签 闪动边框 **/
+.rt-border-line-ani {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 1.4rem;
+  padding: 0.1rem 0.1rem;
+  color: #03e9f4;
+  font-size: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 0.1rem;
+  letter-spacing: 4px
+}
+
+/* a:hover {
+
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+} */
+
+.rt-border-line-ani span {
+  position: absolute;
+  display: block;
+}
+
+.rt-border-line-ani span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.rt-border-line-ani span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 2s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.rt-border-line-ani span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 2s linear infinite;
+  animation-delay: 1s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.rt-border-line-ani span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 2s linear infinite;
+  animation-delay: 1.5s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+//多行输入框。
+.rt-textarea {
+  width: 90% !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid orange !important;
+  background-color: transparent !important;
+  outline: none !important;
+  color: #fff !important;
+  font-size: 0.2rem !important;
+
+  &::placeholder {
+    color: #fff !important;
+    padding-top: 0.8rem;
+    font-size: 0.2rem;
+    text-align: center;
+  }
+}
+
+//水滴样式。
+
+.rt-water-drop {
+  width: 150px;
+  height: 150px;
+  border-radius: 53% 47% 51% 49% / 49% 41% 59% 51%;
+  box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.1),
+    15px 25px 20px rgba(0, 0, 0, 0.08), 15px 25px 25px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.rt-water-drop::before,
+.rt-water-drop::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.rt-water-drop::before {
+  width: 20px;
+  height: 30px;
+  border-radius: 32% 68% 40% 60% / 36% 53% 47% 64%;
+  top: 35px;
+  left: 105px;
+  transform: rotate(-5deg);
+}
+
+.rt-water-drop::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 75px;
+  left: 110px;
+}
