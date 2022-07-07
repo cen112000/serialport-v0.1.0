@@ -459,9 +459,7 @@ export default defineComponent({
       })
     },
     readDeviceDataLen() {
-      // this.RTD?.hdReadDataTotal((response:any) => {
-      //   this.DataTotal = response?.Total || 0
-      // })
+      
     },
     //关闭串口。
     async closeSerialPort() {
